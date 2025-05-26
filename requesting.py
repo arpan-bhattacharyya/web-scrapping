@@ -19,7 +19,7 @@ def scrape_with_selenium(start_url, keyword, max_pages=30):
     queue = deque([start_url])
     domain = urlparse(start_url).netloc
 
-    print(f"🔍 Searching for '{keyword}' in pages from {start_url}\n")
+    print(f" Searching for '{keyword}' in pages from {start_url}\n")
 
     while queue and len(visited) < max_pages:
         url = queue.popleft()
